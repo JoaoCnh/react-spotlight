@@ -1,8 +1,10 @@
-import './index.css'
+import React from "react";
+import { render } from "react-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import React from 'react'
-import {render} from 'react-dom'
+import Spotlight from "./Spotlight";
 
-import App from './App'
+library.add(faSearch);
 
-render(<App/>, document.querySelector('#app'))
+render(<Spotlight />, document.querySelector("#app"));
